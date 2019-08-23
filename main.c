@@ -359,10 +359,10 @@ int main (void) {
 		printf("Unable to create customers tree\n");
 		return -1;
 	}
-	workFile("customers.txt", MAX_CUST_SIZE, customers, 0);
+	workFile("/data/customers.txt", MAX_CUST_SIZE, customers, 0);
 	printf("\nCustomers:\n");
 	dumpTree(customers);
-	workFile("log.txt", MAX_TRAF_SIZE, customers, 1);
+	workFile("/data/log.txt", MAX_TRAF_SIZE, customers, 1);
 	printf("\nCounted traffic:\n");
 	dumpTree(customers);
 	return 0;
